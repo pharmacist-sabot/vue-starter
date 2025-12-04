@@ -7,7 +7,7 @@
 
 An opinionated, production-ready starter template for Vue 3 applications. Designed for scalability, code quality, and developer experience.
 
-## 🚀 Features
+## Features
 
 - **Framework:** Vue 3 (Script Setup) + TypeScript + Vite
 - **State Management:** Pinia (Store)
@@ -19,7 +19,7 @@ An opinionated, production-ready starter template for Vue 3 applications. Design
 - **CI/CD:** GitHub Actions workflow ready.
 - **Utils:** VueUse included.
 
-## gi🛠️ Prerequisites
+## Prerequisites
 
 - **Node.js:** version 22+ (LTS recommended)
 - **Package Manager:** PNPM (defined via `packageManager` in package.json)

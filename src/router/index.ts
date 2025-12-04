@@ -1,3 +1,4 @@
+// src/router/index.ts
 import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
@@ -7,12 +8,13 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: () => import('@/views/HomeView.vue'),
+      meta: { layout: 'default' },
     },
-    // 404 Route setup
     {
       path: '/:pathMatch(.*)*',
       name: 'not-found',
       component: () => import('@/views/NotFoundView.vue'),
+      meta: { layout: 'blank' },
     },
   ],
 });

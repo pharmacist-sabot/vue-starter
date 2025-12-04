@@ -1,60 +1,28 @@
-<!-- src/views/NotFoundView.vue -->
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
+
+import BaseButton from '@/components/common/BaseButton.vue';
 </script>
 
 <template>
-  <div class="not-found">
-    <div class="content">
-      <h1 class="error-code">
-        404
-      </h1>
-      <h2>Page Not Found</h2>
-      <p>Oops! The page you are looking for does not exist.</p>
+  <div class="text-center px-4">
+    <h1 class="text-9xl font-black text-gray-200">
+      404
+    </h1>
 
-      <RouterLink to="/" class="back-link">
-        Go Back Home
+    <div class="-mt-12 relative z-10 space-y-6">
+      <h2 class="text-3xl font-bold text-gray-900">
+        Page Not Found
+      </h2>
+      <p class="text-gray-500 max-w-md mx-auto">
+        Oops! The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+      </p>
+
+      <RouterLink v-slot="{ navigate }" to="/" custom>
+        <BaseButton variant="primary" @click="navigate">
+          Back to Home
+        </BaseButton>
       </RouterLink>
     </div>
   </div>
 </template>
-
-<style scoped>
-.not-found {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh;
-  text-align: center;
-}
-
-.error-code {
-  font-size: 6rem;
-  font-weight: bold;
-  color: #ff5252;
-  margin: 0;
-  line-height: 1;
-}
-
-h2 {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
-
-.back-link {
-  display: inline-block;
-  margin-top: 2rem;
-  padding: 0.8rem 1.5rem;
-  background-color: #646cff;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 500;
-  transition: transform 0.2s;
-}
-
-.back-link:hover {
-  background-color: #535bf2;
-  transform: translateY(-2px);
-}
-</style>
