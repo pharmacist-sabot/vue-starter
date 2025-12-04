@@ -1,12 +1,5 @@
 {
   "extends": "@vue/tsconfig/tsconfig.dom.json",
-  "include": [
-    "src/**/*",
-    "src/**/*.vue"
-  ],
-  "exclude": [
-    "src/**/__tests__/*"
-  ],
   "compilerOptions": {
     "composite": true,
     "baseUrl": ".",
@@ -16,8 +9,15 @@
       ]
     },
     "strict": true,
-    "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true,
     "verbatimModuleSyntax": true
-  }
+  },
+  "include": [
+    "src/**/*",
+    "src/**/*.vue"
+  ],
+  "exclude": [
+    "src/**/__tests__/*"
+  ]
 }
