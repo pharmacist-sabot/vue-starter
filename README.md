@@ -1,7 +1,6 @@
 # Vue 3 Enterprise Starter Template
 
 ![CI Quality](https://github.com/pharmacist-sabot/vue-starter/actions/workflows/ci.yml/badge.svg)
-[![License: MIT](httpsjq.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Vue](https://img.shields.io/badge/Vue-3.5+-4FC08D?logo=vue.js)](https://vuejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?logo=typescript)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-6.0+-646CFF?logo=vite)](https://vitejs.dev/)
@@ -25,7 +24,7 @@ An opinionated, production-ready starter template for Vue 3 applications. Design
 - **Node.js:** version 22+ (LTS recommended)
 - **Package Manager:** PNPM (defined via `packageManager` in package.json)
 
-## 📦 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 
@@ -57,7 +56,7 @@ pnpm dev
 
 The app will be served at `http://localhost:5173/`.
 
-## nP📜 Available Scripts
+## Available Scripts
 
 | Script            | Description                                                    |
 | :---------------- | :------------------------------------------------------------- |
@@ -69,7 +68,7 @@ The app will be served at `http://localhost:5173/`.
 | `pnpm type-check` | Run TypeScript compiler check (no emit).                       |
 | `pnpm audit`      | Check for high-severity security vulnerabilities.              |
 
-## fqDirectory Structure
+## Directory Structure
 
 ```text
 src/
@@ -84,7 +83,7 @@ src/
 └── views/           # Page components associated with routes
 ```
 
-## 🤝 Contribution Guidelines
+## Contribution Guidelines
 
 ### Commit Message Convention
 
@@ -105,7 +104,7 @@ We follow the [Conventional Commits](https://www.conventionalcommits.org/) speci
 - `feature/*`: For new features (e.g., `feature/login-screen`).
 - `fix/*`: For bug fixes (e.g., `fix/header-alignment`).
 
-## 🛡️ Quality Gates
+## Quality Gates
 
 Before merging code, the following checks must pass (automated via GitHub Actions):
 
@@ -114,6 +113,6 @@ Before merging code, the following checks must pass (automated via GitHub Action
 3.  **Build:** The project must build successfully.
 4.  **Audit:** No high-severity vulnerabilities.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
