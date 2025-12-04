@@ -16,9 +16,9 @@ export default {
         'refactor',
         'revert',
         'style',
-        'test'
-      ]
+        'test',
+      ],
     ],
     'subject-full-stop': [2, 'never', '.'],
-  }
-}
+  },
+};

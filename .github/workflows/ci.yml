@@ -1,0 +1,32 @@
+name: CI Quality
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Check Formatting & Lint
+        run: pnpm lint
+
+      - name: Type Check (Strict)
+        run: pnpm type-check
+
+      - name: Security Audit
+        run: pnpm audit
