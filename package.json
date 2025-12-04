@@ -12,7 +12,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky",
-    "audit": "audit-ci --high"
+    "audit": "audit-ci --high",
+    "test:unit": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@vueuse/core": "^14.1.0",
@@ -27,15 +29,18 @@
     "@tailwindcss/vite": "^4.1.17",
     "@types/node": "^24.10.1",
     "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/test-utils": "^2.4.6",
     "@vue/tsconfig": "^0.8.1",
     "audit-ci": "^7.1.0",
     "eslint": "^9.39.1",
     "eslint-plugin-format": "^1.0.2",
     "husky": "^9.1.7",
+    "jsdom": "^27.2.0",
     "lint-staged": "^16.2.7",
     "tailwindcss": "^4.1.17",
     "typescript": "~5.9.3",
     "vite": "^7.2.4",
+    "vitest": "^4.0.15",
     "vue-tsc": "^3.1.4"
   },
   "lint-staged": {

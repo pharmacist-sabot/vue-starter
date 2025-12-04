@@ -6,6 +6,9 @@
     "paths": {
       "@/*": [
         "./src/*"
+      ],
+      "types": [
+        "vitest/globals"
       ]
     },
     "strict": true,
@@ -16,7 +19,8 @@
   "include": [
     "src/**/*",
     "src/**/*.vue",
-    "src/**/*.d.ts"
+    "src/**/*.d.ts",
+    "tests/**/*"
   ],
   "exclude": [
     "src/**/__tests__/*"
