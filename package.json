@@ -37,7 +37,7 @@
     "*.{js,jsx,ts,tsx,vue}": [
       "eslint --fix"
     ],
-    "*.{json,md}": [
+    "*.{json,md,yml}": [
       "eslint --fix"
     ]
   }
