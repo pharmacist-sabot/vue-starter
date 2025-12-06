@@ -1,3 +1,4 @@
+<!-- src/views/NotFoundView.vue -->
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
 

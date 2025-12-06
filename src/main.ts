@@ -1,3 +1,4 @@
+// src/main.ts
 import { createPinia } from 'pinia';
 import { createApp } from 'vue';
 

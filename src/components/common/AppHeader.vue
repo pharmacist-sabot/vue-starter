@@ -1,3 +1,4 @@
+<!-- src/components/common/AppHeader.vue -->
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
 </script>

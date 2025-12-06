@@ -1,3 +1,4 @@
+// src/stores/counter.ts
 import { defineStore } from 'pinia';
 import { computed, ref } from 'vue';
 

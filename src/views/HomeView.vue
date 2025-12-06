@@ -1,3 +1,4 @@
+<!-- src/views/HomeView.vue -->
 <script setup lang="ts">
 import BaseButton from '@/components/common/BaseButton.vue';
 import { useCounterStore } from '@/stores/counter';
