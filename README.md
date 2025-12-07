@@ -1,4 +1,4 @@
-# Vue 3 Enterprise Starter Template
+# Vue 3 Starter Template
 
 ![CI Quality](https://github.com/pharmacist-sabot/vue-starter/actions/workflows/ci.yml/badge.svg)
 [![Vue](https://img.shields.io/badge/Vue-3.5+-4FC08D?logo=vue.js)](https://vuejs.org/)
@@ -166,17 +166,6 @@ We utilize **@antfu/eslint-config**, which provides a curated set of rules for V
 ---
 
 ## 🚢 Deployment
-
-### Docker
-
-1. Build the image:
-   ```bash
-   docker build -t my-vue-app .
-   ```
-2. Run the container:
-   ```bash
-   docker run -p 8080:80 my-vue-app
-   ```
 
 ### Static Hosting (Vercel, Netlify, etc.)
 
